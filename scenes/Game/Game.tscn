@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://d0on76eh6aurg"]
+[gd_scene load_steps=5 format=3 uid="uid://d0on76eh6aurg"]
 
 [ext_resource type="Script" path="res://scenes/Game/Game.cs" id="1_23aar"]
 [ext_resource type="Texture2D" uid="uid://bwbjxqct6fws8" path="res://assets/Sky/ph_sky_background.png" id="2_c7a7x"]
 [ext_resource type="PackedScene" uid="uid://bdb70uq0g64sn" path="res://scenes/Player/Player.tscn" id="3_wlk0q"]
+[ext_resource type="PackedScene" uid="uid://dft0qwib5bwt8" path="res://scenes/Enemy/Enemy.tscn" id="4_c5fst"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_23aar")
@@ -27,3 +28,10 @@ polygon = PackedVector2Array(0, 0, 408, 0, 408, 24, 0, 24)
 
 [node name="Player" parent="." instance=ExtResource("3_wlk0q")]
 position = Vector2(184, 288)
+
+[node name="Enemy" parent="." instance=ExtResource("4_c5fst")]
+position = Vector2(188, 0)
+collision_layer = 3
+collision_mask = 3
+max_contacts_reported = 5
+contact_monitor = true
