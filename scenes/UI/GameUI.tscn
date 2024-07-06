@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://643ey75y2nhq"]
+
+[node name="GameUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Refs" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GameRef" type="ReferenceRect" parent="Refs"]
+layout_mode = 0
+offset_right = 360.0
+offset_bottom = 360.0
+
+[node name="InfoRef" type="ReferenceRect" parent="Refs"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 80.0
+offset_right = 640.0
+offset_bottom = 360.0
+border_color = Color(0, 1, 0, 1)
+
+[node name="CurrentRef" type="ReferenceRect" parent="Refs/InfoRef"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 264.0
+offset_bottom = 56.0
+border_color = Color(0, 1, 0, 1)
+
+[node name="ShieldRef" type="ReferenceRect" parent="Refs/InfoRef"]
+offset_left = 148.0
+offset_top = 72.0
+offset_right = 264.0
+offset_bottom = 112.0
+border_color = Color(0, 1, 0, 1)
+
+[node name="EnergyRef" type="ReferenceRect" parent="Refs/InfoRef"]
+offset_left = 148.0
+offset_top = 128.0
+offset_right = 264.0
+offset_bottom = 168.0
+border_color = Color(0, 1, 0, 1)
+
+[node name="MenuRef" type="ReferenceRect" parent="Refs"]
+layout_mode = 0
+offset_left = 360.0
+offset_right = 640.0
+offset_bottom = 80.0
+border_color = Color(0, 0, 1, 1)
+
+[node name="MenuButtons" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 360.0
+offset_right = 640.0
+offset_bottom = 80.0
