@@ -8,6 +8,8 @@ public partial class Player : CharacterBody2D
 
     [Export]
     public PackedScene ProjectileScene;
+    public int Health = 100;
+    public int Shield = 20;
     private int count = 1;
 
     public override void _Ready()
